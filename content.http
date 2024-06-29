@@ -1,0 +1,40 @@
+### Find all content
+GET http://localhost:9090/api/content
+
+
+### Get Content by Id
+GET http://localhost:9090/api/content/1
+
+
+### Insert Content
+POST http://localhost:9090/api/content
+Content-Type: application/json
+
+{
+  "title": "qwe",
+  "description": "1v5",
+  "status": "IN_PROGRESS",
+  "contentType": "VIDEO",
+  "dateCreated": "2024-06-29T11:04:59.4276416",
+  "dateUpdated": "2024-06-29T11:04:59.4276416",
+  "url": "youtube.com/anthonyvalo"
+}
+
+### Update Content
+PUT http://localhost:9090/api/content/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Valorant Gameplay New",
+  "description": "1v2",
+  "status": "IN_PROGRESS",
+  "contentType": "VIDEO",
+  "dateCreated": "2024-06-29T11:04:59.4276416",
+  "dateUpdated": "2024-06-29T11:04:59.4276416",
+  "url": "youtube.com/anthonyvalo"
+}
+
+
+### Delete Content by Id
+DELETE http://localhost:9090/api/content/1
